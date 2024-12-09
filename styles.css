@@ -1,0 +1,55 @@
+.writing-controls {
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    align-items: center;
+    font-family: 'Google Sans', sans-serif;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+    margin: 8px 0;
+}
+
+.help-btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 0 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 36px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.help-btn:hover {
+    background-color: #1557b0;
+}
+
+.help-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.help-text {
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.processing-indicator {
+    color: #1a73e8;
+    font-size: 14px;
+    display: none;
+}
+
+.processing-indicator.active {
+    display: inline;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
